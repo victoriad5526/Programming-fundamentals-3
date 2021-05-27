@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp17efsdvs
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string text1 = Console.ReadLine(); 
+            string[] letters = text1
+               .Split(' ')
+               .ToArray();
+            Array.Reverse(letters);
+            foreach (var text in letters)
+            {
+                Console.Write(text + " ");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
